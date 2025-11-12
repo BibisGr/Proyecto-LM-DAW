@@ -1,56 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Prueba Clase 5</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="navbar">
-      <h1>Logo</h1>
-      <div class="links">
-        <a href="#lol" class="link">Home</a>
-        <a href="#" class="link">About Us</a>
-        <a href="#" class="link">Store</a>
-        <a href="#" class="link">Contacto</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Prueba Clase 5</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>🍷 Vinos de España</h1>
+    <div class="links">
+      <a href="#home" class="link">Inicio</a>
+      <a href="#about" class="link">Sobre Nosotros</a>
+      <a href="#tienda" class="link">Tienda</a>
+      <a href="#contacto" class="link">Contacto</a>
+    </div>
+  </div>
+  <div class="hero">
+    <h1>Descubre los Mejores Vinos Españoles</h1>
+    <h2>🎉 Promoción Especial: 20% de Descuento en Compras Mayores a €50</h2>
+    <img src="https://www.vinetur.com/imagenes/2019/marzo/1/vino.jpg" alt="Vinos españoles premium" />
+  </div>
+  <div class="About-Us">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En Vinos de España, nos dedicamos a traerte las mejores selecciones de vinos procedentes de las regiones más
+      prestigiosas de España. Con más de 15 años de experiencia en la industria vitivinícola, nos enorgullece ofrecer
+      productos de calidad superior, desde vinos tintos robustos de la Rioja, hasta blancos frescos de la región de Rías
+      Baixas.
+    </p>
+    <p>
+      Nuestro equipo de expertos selecciona cada botella con cuidado, asegurando que solo los mejores vinos lleguen a tu
+      mesa. Creemos que un buen vino es más que una bebida; es una experiencia, una historia y una conexión con la
+      tierra que lo produce. Por eso nos comprometemos a ofrecer vinos auténticos, sustentables y con el mejor precio
+      del mercado.
+    </p>
+  </div>
+
+  <!-- GALERÍA DE FOTOS DE REGIONES VINÍCOLAS -->
+  <div class="galeria-fotos">
+    <h2>Conoce Nuestras Regiones Productoras</h2>
+    <div class="foto-grupo">
+      <div class="foto-item">
+        <img src="https://images.unsplash.com/photo-1553361521-ee2933150f88?w=400&h=300&fit=crop"
+          alt="Viñedos de La Rioja">
+        <h3>La Rioja</h3>
+        <p>La región más emblemática de España, famosa por sus vinos tintos de gran calidad y envejecimiento en barrica.
+        </p>
+      </div>
+      <div class="foto-item">
+        <img src="https://images.unsplash.com/photo-1585518419759-36dddb2efed1?w=400&h=300&fit=crop"
+          alt="Viñedos de Rías Baixas">
+        <h3>Rías Baixas</h3>
+        <p>Ubicada en Galicia, esta región produce los mejores vinos blancos de España con denominación de origen.</p>
+      </div>
+      <div class="foto-item">
+        <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd37e6f?w=400&h=300&fit=crop"
+          alt="Viñedos de Penedès">
+        <h3>Penedès</h3>
+        <p>Situada en Cataluña, es conocida por su tradición vitivinícola y sus vinos de excelente calidad.</p>
+      </div>
+      <div class="foto-item">
+        <img src="https://images.unsplash.com/photo-1516553774822-3f270e894738?w=400&h=300&fit=crop"
+          alt="Viñedos de Ribera del Duero">
+        <h3>Ribera del Duero</h3>
+        <p>Una de las denominaciones de origen más prestigiosas de España, con vinos de gran potencial.</p>
       </div>
     </div>
-    <div class="hero">
-      <h1>Titulo</h1>
-      <h2>Promo</h2>
-      <img src="https://www.vinetur.com/imagenes/2019/marzo/1/vino.jpg" alt="img principal" />
-    </div>
-    <div class="About-Us">
-      <h2>About Us</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam nostrum
-        a, provident non expedita porro praesentium, illo beatae, libero fugiat
-        dolorem recusandae sapiente modi eligendi voluptas. Dolorem rerum autem
-        fuga?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        corporis dolorum debitis assumenda magnam, impedit iusto quis minima ab
-        illo harum dolores reiciendis, dolorem officia eius temporibus?
-        Necessitatibus, labore sunt.
-      </p>
-    </div>
-    <div class="Misc">
-      <!-- galeria -->
-      <!-- tabla -->
-      <!-- formulario -->
-    </div>
-    <div class="footer">
-      <div class="logo">
-        <img src="https://www.vinosycavasonline.es/images/browser/vino%20de%20espana.png" alt="logo">
-        <p>Copyright &copy; DAW 1ro</p>
+  </div>
+
+  <div class="Misc">
+    <!-- GALERÍA DE VINOS -->
+    <h2>Nuestros Vinos Destacados</h2>
+    <!-- <div class="galeria">
+      <div class="vino">
+        <img src="https://vinosymarcos.com/wp-content/uploads/2021/10/6461141120045_1.jpg" alt="Rioja Premium" />
+        <h3>Rioja Premium Reserva</h3>
+        <p>Vino tinto de gran cuerpo con notas de cereza y especias. Perfecto para ocasiones especiales.</p>
       </div>
-      <div class="rrss">
-        <img src="https://i.pinimg.com/736x/7b/ea/d4/7bead4127f76c34086f3ba2a84ab995d.jpg" alt="INSTA" />
-        <img src="https://i.pinimg.com/564x/9a/4d/48/9a4d48e6f06a034eb98b47ddaf9b7f37.jpg" alt="YT" />
-        <img src="https://i.pinimg.com/736x/7b/c6/06/7bc6068cdf98c94003b23723b444d1b6.jpg" alt="TT" />
+      <div class="vino">
+        <img src="https://images.vivino.com/thumbs/bDfVELs6T0GnHhDCsZxyQA_375x500.jpg" alt="Albariño" />
+        <h3>Albariño Rías Baixas</h3>
+        <p>Vino blanco fresco y aromático. Ideal para acompañar pescados y mariscos.</p>
       </div>
+      <div class="vino">
+        <img src="https://images.vivino.com/thumbs/Xks9eQ5oQUihLJBfnXDiow_375x500.jpg" alt="Tempranillo" />
+        <h3>Tempranillo Penedès</h3>
+        <p>Vino equilibrado con toques de frutas rojas. Excelente relación calidad-precio.</p>
+      </div>
+    </div> -->
+
+    <!-- TABLA DE CARACTERÍSTICAS -->
+    <h2>Comparativa de Nuestros Mejores Vinos</h2>
+
+    <!-- <table class="exe">
+      <thead>
+        <tr>
+          <th>Departamento</th>
+          <th>Grupos</th>
+          <th>Trabajador</th>
+          <th>Salario Base</th>
+          <th>Horas Trabajadas</th>
+          <th>IVA</th>
+          <th>Total Pagado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="12">Dirección</td>
+          <td rowspan="4">RRHH</td>
+          <td>Carlos González Rodríguez</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>María López Fernández</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Juan Pérez Alonso</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Laura Sánchez García</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Secretaría</td>
+          <td>Miguel Torres Martínez</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Rosa Díaz Núñez</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Antonio Ruiz López</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Administración</td>
+          <td>Isabel Moreno Castro</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Francisco Jiménez Ramos</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Diego Vega Montoya</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Finanzas</td>
+          <td>Sofía Romero Iglesias</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+        <tr>
+          <td>Pablo Navarro Gómez</td>
+          <td>1800</td>
+          <td>44</td>
+          <td>21%</td>
+          <td>2178</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" rowspan="2">Totales</td>
+          <th>12 Trabajadores</th>
+          <th>€21,600</th>
+          <th>528 horas</th>
+          <th>21%</th>
+          <th>€26,136</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table> -->
+    <!-- 
+    <table class="tabla">
+      <thead>
+      <tr>
+        <th>celda</th>
+        <th>celda</th>
+        <th>celda</th>
+        <th>celda</th>
+        <th>celda</th>
+        <th>celda</th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <th class="foot">celda</th>
+        <th class="foot">celda</th>
+        <th class="foot">celda</th>
+        <th class="foot">celda</th>
+        <th class="foot">celda</th>
+        <th class="foot">celda</th>
+      </tr>
+      </tfoot>
+      
+    </table> -->
+
+    <!-- <table>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+      <tr>
+        <td>celda</td>
+        <td>celda</td>
+      </tr>
+    </table> -->
+
+
+    <table class="tabla-vinos">
+      <tr>
+        <th>Nombre</th>
+        <th>Región</th>
+        <th>Tipo</th>
+        <th>Graduación</th>
+        <th>Precio (€)</th>
+      </tr>
+      <tr>
+        <td>Rioja Premium Reserva</td>
+        <td>La Rioja</td>
+        <td>Tinto</td>
+        <td>14%</td>
+        <td>22,50</td>
+      </tr>
+      <tr>
+        <td>Albariño Rías Baixas</td>
+        <td>Galicia</td>
+        <td>Blanco</td>
+        <td>12,5%</td>
+        <td>15,99</td>
+      </tr>
+      <tr>
+        <td>Tempranillo Penedès</td>
+        <td>Cataluña</td>
+        <td>Tinto</td>
+        <td>13,5%</td>
+        <td>12,95</td>
+      </tr>
+      <tr>
+        <td>Moscatel Dulce</td>
+        <td>Valencia</td>
+        <td>Dulce</td>
+        <td>15%</td>
+        <td>11,50</td>
+      </tr>
+    </table>
+
+    <!-- FORMULARIO DE SUSCRIPCIÓN -->
+    <h2>Suscríbete a Nuestro Boletín</h2>
+
+    <form class="formulario" action="" method="get">
+      <div class="form-section">
+        <h3>Información Personal</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Tu primer nombre" autofocus
+              required>
+          </div>
+          <div class="form-group">
+            <label for="segundo-nombre">Segundo Nombre</label>
+            <input type="text" name="segundo-nombre" id="segundo-nombre" maxlength="50"
+              placeholder="Tu segundo nombre (opcional)">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Tu apellido" required>
+          </div>
+          <div class="form-group">
+            <label for="segundo-apellido">Segundo Apellido</label>
+            <input type="text" name="segundo-apellido" id="segundo-apellido" maxlength="50"
+              placeholder="Tu segundo apellido (opcional)">
+          </div>
+        </div>
+
+        <div class="form-group-full">
+          <label for="fullname">Nombre Completo</label>
+          <input type="text" name="fullname" id="fullname" maxlength="200" placeholder="Nombre completo" readonly>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Datos de Contacto</h3>
+
+        <div class="form-group-full">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" name="email" id="email" placeholder="tu.email@ejemplo.com" required>
+        </div>
+
+        <div class="form-group-full">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" placeholder="Crea una contraseña segura" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Preferencias</h3>
+
+        <div class="form-group-full">
+          <label for="cantidad">Número de Boletines Recibidos (máximo 10)</label>
+          <input type="number" name="cantidad" id="cantidad" value="1" min="0" max="10" step="1">
+        </div>
+
+        <div class="form-group-full checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="ofertas" id="ofertas" checked>
+            <span>Deseo recibir ofertas y promociones especiales</span>
+          </label>
+        </div>
+
+        <div class="form-group-full radio-group">
+          <label class="radio-label">
+            <input type="radio" name="frecuencia" id="semanal" value="semanal" checked>
+            <span>Semanal</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="frecuencia" id="mensual" value="mensual">
+            <span>Mensual</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="frecuencia" id="trimestral" value="trimestral">
+            <span>Trimestral</span>
+          </label>
+        </div>
+      </div>
+      <label for="">Dejar tu respuesta</label>
+      Si<input type="radio" name="respuesta" id="si" checked>
+      NO<input type="radio" name="respuesta" id="no">
+      NC<input type="radio" name="respuesta" id="noAnswer">
+
+      <label for="">tareas del dia</label>
+      Dormir<input type="checkbox" name="tareas" id="Dormir">
+      Comer<input type="checkbox" name="tareas" id="Comer">
+      Baño<input type="checkbox" name="tareas" id="Baño">
+      Leer<input type="checkbox" name="tareas" id="Leer">
+      Estudiar<input type="checkbox" name="tareas" id="Estudiar">
+
+
+
+      <div class="form-buttons">
+        <button type="submit" class="btn-submit">Suscribirse</button>
+        <button type="reset" class="btn-reset">Limpiar Formulario</button>
+      </div>
+    </form>
+    <!-- <form class="formulario">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+      </div>
+      <div class="form-group">
+        <label for="preferencia">Preferencia de Vinos:</label>
+        <select id="preferencia" name="preferencia">
+          <option value="">-- Selecciona una opción --</option>
+          <option value="tinto">Tintos</option>
+          <option value="blanco">Blancos</option>
+          <option value="rosado">Rosados</option>
+          <option value="espumante">Espumantes</option>
+          <option value="todos">Todos</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="terminos" required>
+          Acepto recibir ofertas y promociones especiales
+        </label>
+      </div>
+      <button type="submit" class="btn-submit">Suscribirse</button>
+    </form> -->
+  </div>
+  <div class="footer">
+    <div class="logo">
+      <img src="https://www.vinosycavasonline.es/images/browser/vino%20de%20espana.png" alt="logo">
+      <p>Copyright &copy; DAW 1ro</p>
     </div>
-  </body>
+    <div class="rrss">
+      <img src="https://i.pinimg.com/736x/7b/ea/d4/7bead4127f76c34086f3ba2a84ab995d.jpg" alt="INSTA" />
+      <img src="https://i.pinimg.com/564x/9a/4d/48/9a4d48e6f06a034eb98b47ddaf9b7f37.jpg" alt="YT" />
+      <img src="https://i.pinimg.com/736x/7b/c6/06/7bc6068cdf98c94003b23723b444d1b6.jpg" alt="TT" />
+    </div>
+  </div>
+</body>
+
 </html>

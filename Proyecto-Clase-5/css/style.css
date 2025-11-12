@@ -1,7 +1,10 @@
 body {
-  background-color: #3c0015; /*color de fondo*/
-  color: #eee2c7; /*color de contraste*/
+  background-color: #3c0015;
+  /*color de fondo*/
+  color: #eee2c7;
+  /*color de contraste*/
 }
+
 .navbar {
   text-align: center;
   padding: 2px;
@@ -9,19 +12,20 @@ body {
   /* background-color: ; para poner color de fondo */
   /* background-image: url():  para poner imagen de fondo*/
   background: #eee2c7;
-  background: linear-gradient(
-    90deg,
-    rgba(238, 226, 199, 1) 0%,
-    rgba(238, 226, 199, 1) 40%,
-    rgba(238, 226, 199, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(238, 226, 199, 1) 0%,
+      rgba(238, 226, 199, 1) 40%,
+      rgba(238, 226, 199, 0) 100%);
 }
+
 .navbar h1 {
   color: #3c0015;
 }
+
 .navbar .links {
   /* la caja */
 }
+
 .navbar .links .link {
   /* son los a */
   text-decoration: none;
@@ -33,11 +37,13 @@ body {
   border: #3c0015 1px solid;
   box-shadow: #eee2c756 2px 4px 4px;
 }
+
 .navbar .links .link:hover {
   background-color: #3c0015;
   color: #eee2c7;
   border: #eee2c7 1px solid;
 }
+
 /* subclases para link 
 .link:visited{
     color: red;
@@ -53,44 +59,476 @@ body {
 .hero {
   text-align: center;
 }
+
 .hero h1 {
   font-size: 2em;
 }
+
 .hero h2 {
   font-size: 1.5em;
 }
+
 .hero img {
   width: 200px;
 }
-.About-Us {
-}
+
+.About-Us {}
+
 .About-Us h2 {
   font-size: 1.5em;
 }
+
 .About-Us p {
   text-align: justify;
   margin: 10px;
   padding: 10px;
 }
-.Misc {
+
+/* GALERÍA DE FOTOS DE REGIONES */
+.galeria-fotos {
+  padding: 30px 20px;
+  margin: 20px 0;
+  background-color: rgba(238, 226, 199, 0.05);
 }
+
+.galeria-fotos h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #eee2c7;
+}
+
+.foto-grupo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foto-item {
+  display: inline-block;
+  width: 280px;
+  margin: 15px;
+  padding: 0;
+  border: 2px solid #eee2c7;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(60, 0, 21, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+}
+
+.foto-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(238, 226, 199, 0.3);
+}
+
+.foto-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-item h3 {
+  color: #eee2c7;
+  font-size: 1.2em;
+  margin: 12px 10px 8px 10px;
+  padding: 0;
+}
+
+.foto-item p {
+  color: #eee2c7;
+  font-size: 0.85em;
+  line-height: 1.4;
+  text-align: justify;
+  margin: 0;
+  padding: 0 10px 12px 10px;
+}
+
+.Misc {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.Misc h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #eee2c7;
+}
+
+/* GALERÍA DE VINOS */
+.galeria {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.galeria .vino {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #eee2c7;
+  border-radius: 8px;
+  background-color: rgba(238, 226, 199, 0.1);
+  vertical-align: top;
+}
+
+.galeria .vino img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.galeria .vino h3 {
+  color: #eee2c7;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.galeria .vino p {
+  color: #eee2c7;
+  font-size: 0.9em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* TABLA DE VINOS */
+.tabla-vinos {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tabla-vinos th {
+  background-color: #8b5a3c;
+  color: #eee2c7;
+  padding: 12px;
+  border: 1px solid #eee2c7;
+  font-weight: bold;
+}
+
+.tabla-vinos td {
+  padding: 10px;
+  border: 1px solid #eee2c7;
+  color: #eee2c7;
+}
+
+.tabla-vinos tr:nth-child(even) {
+  background-color: rgba(238, 226, 199, 0.05);
+}
+
+.tabla-vinos tr:hover {
+  background-color: rgba(238, 226, 199, 0.15);
+}
+
+/* TABLA EXE (ESTRUCTURA ORIGINAL) */
+.exe {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.exe th {
+  background-color: #8b5a3c;
+  color: #eee2c7;
+  padding: 12px;
+  border: 1px solid #eee2c7;
+  font-weight: bold;
+}
+
+.exe td {
+  padding: 10px;
+  border: 1px solid #eee2c7;
+  color: #eee2c7;
+}
+
+.exe tbody tr:nth-child(even) {
+  background-color: rgba(238, 226, 199, 0.05);
+}
+
+.exe tbody tr:hover {
+  background-color: rgba(238, 226, 199, 0.15);
+}
+
+.exe tfoot {
+  background-color: #5a3a1f;
+}
+
+.exe tfoot th,
+.exe tfoot td {
+  font-weight: bold;
+  background-color: #5a3a1f;
+  padding: 12px;
+}
+
+/* TABLA DE TRABAJADORES */
+.tabla-trabajadores {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.tabla-trabajadores thead {
+  background-color: #8b5a3c;
+}
+
+.tabla-trabajadores th {
+  background-color: #8b5a3c;
+  color: #eee2c7;
+  padding: 12px;
+  border: 1px solid #eee2c7;
+  font-weight: bold;
+}
+
+.tabla-trabajadores td {
+  padding: 10px;
+  border: 1px solid #eee2c7;
+  color: #eee2c7;
+}
+
+.tabla-trabajadores tbody tr:nth-child(even) {
+  background-color: rgba(238, 226, 199, 0.05);
+}
+
+.tabla-trabajadores tbody tr:hover {
+  background-color: rgba(238, 226, 199, 0.15);
+}
+
+.tabla-trabajadores tfoot {
+  background-color: #5a3a1f;
+}
+
+.tabla-trabajadores tfoot th,
+.tabla-trabajadores tfoot td {
+  font-weight: bold;
+  background-color: #5a3a1f;
+  padding: 12px;
+}
+
+/* TABLA DE VINOS */
+
+/* FORMULARIO */
+.formulario {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgba(238, 226, 199, 0.08);
+  border: 2px solid #8b5a3c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section:last-of-type {
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  color: #eee2c7;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8b5a3c;
+}
+
+.form-row {
+  display: inline-block;
+  width: 100%;
+}
+
+.form-group {
+  display: inline-block;
+  width: calc(50% - 8px);
+  margin-right: 16px;
+  margin-bottom: 15px;
+  vertical-align: top;
+}
+
+.form-group:nth-child(even) {
+  margin-right: 0;
+}
+
+.form-group-full {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group label,
+.form-group-full label {
+  display: block;
+  margin-bottom: 6px;
+  color: #eee2c7;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.form-group input,
+.form-group-full input,
+.form-group select,
+.form-group-full select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee2c7;
+  border-radius: 5px;
+  background-color: rgba(60, 0, 21, 0.8);
+  color: #eee2c7;
+  font-size: 0.95em;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group-full input:focus,
+.form-group select:focus,
+.form-group-full select:focus {
+  outline: none;
+  border-color: #c9a961;
+  background-color: rgba(60, 0, 21, 0.95);
+  box-shadow: 0 0 5px rgba(201, 169, 97, 0.5);
+}
+
+.form-group input::placeholder,
+.form-group-full input::placeholder {
+  color: rgba(238, 226, 199, 0.6);
+}
+
+/* CHECKBOX Y RADIO */
+.checkbox-group,
+.radio-group {
+  margin-top: 10px;
+}
+
+.checkbox-label,
+.radio-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #eee2c7;
+  font-weight: normal;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.checkbox-label input,
+.radio-label input {
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.checkbox-label span,
+.radio-label span {
+  vertical-align: middle;
+}
+
+/* BOTONES */
+.form-buttons {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-submit,
+.btn-reset {
+  display: inline-block;
+  width: 48%;
+  padding: 12px 20px;
+  margin: 5px 1%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  background-color: #8b5a3c;
+  color: #eee2c7;
+}
+
+.btn-submit:hover {
+  background-color: #a86b47;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-reset {
+  background-color: #5a3a1f;
+  color: #eee2c7;
+}
+
+.btn-reset:hover {
+  background-color: #6d4429;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .footer {
   margin: 10px;
   padding: 10px;
   text-align: center;
   border-top: #eee2c7 1px solid;
 }
+
 .footer .logo {
   padding-top: 20px;
 }
-.footer .logo p {
-}
+
+.footer .logo p {}
+
 .footer .logo img {
-    width: 200px;
+  width: 200px;
 }
-.footer .rrss {
-}
+
+.footer .rrss {}
+
 .footer .rrss img {
-    width: 50px;
-    border-radius: 50%;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* 
+.tabla td{
+  border: #eee2c7 1px solid;
+}
+.tabla thead{
+  background-color: #8b5a3c;
+  color: #eee2c7;
+}
+.tabla tfoot{
+  background-color: aliceblue;
+  color: #8b5a3c;
+} */
+.exe {
+  border: 1px solid wheat;
+  margin: auto;
+}
+
+.exe thead {
+  background-color: darkmagenta;
+  color: beige;
+}
+
+.exe thead th {
+  padding: 10px;
+}
+
+.exe tbody td {
+  border: 1px solid wheat;
+}
+
+.exe tfoot th {
+  border: 2px solid rgb(179, 223, 245);
 }
